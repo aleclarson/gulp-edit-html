@@ -1,9 +1,10 @@
 dependencies:
+  '@types/cheerio': 0.22.22
+  '@types/vinyl': 2.0.4
   cheerio: 0.22.0
   iconv-lite: 0.6.2
 devDependencies:
   '@alloc/prettier-config': 1.0.0
-  '@types/cheerio': 0.22.22
   '@types/node': 14.14.2
   prettier: 2.1.2
 lockfileVersion: 5.1
@@ -15,17 +16,28 @@ packages:
   /@types/cheerio/0.22.22:
     dependencies:
       '@types/node': 14.14.6
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-05DYX4zU96IBfZFY+t3Mh88nlwSMtmmzSYaQkKN48T495VV1dkHSah6qYyDTN5ngaS0i0VonH37m+RuzSM0YiA==
+  /@types/expect/1.20.4:
+    dev: false
+    resolution:
+      integrity: sha512-Q5Vn3yjTDyCMV50TB6VRIbQNxSE4OmZR86VSbGaNpfUolm0iePBB4KdEEHmxoY5sT2+2DIvXW0rvMDP2nHZ4Mg==
   /@types/node/14.14.2:
     dev: true
     resolution:
       integrity: sha512-jeYJU2kl7hL9U5xuI/BhKPZ4vqGM/OmK6whiFAXVhlstzZhVamWhDSmHyGLIp+RVyuF9/d0dqr2P85aFj4BvJg==
   /@types/node/14.14.6:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-6QlRuqsQ/Ox/aJEQWBEJG7A9+u7oSYl3mem/K8IzxXG/kAGbV1YPD9Bg9Zw3vyxC/YP+zONKwy8hGkSt1jxFMw==
+  /@types/vinyl/2.0.4:
+    dependencies:
+      '@types/expect': 1.20.4
+      '@types/node': 14.14.6
+    dev: false
+    resolution:
+      integrity: sha512-2o6a2ixaVI2EbwBPg1QYLGQoHK56p/8X/sGfKbFC8N6sY9lfjsMf/GprtkQkSya0D4uRiutRZ2BWj7k3JvLsAQ==
   /boolbase/1.0.0:
     dev: false
     resolution:
@@ -217,6 +229,7 @@ specifiers:
   '@alloc/prettier-config': ^1.0.0
   '@types/cheerio': ^0.22.22
   '@types/node': ^14.14.2
+  '@types/vinyl': ^2.0.4
   cheerio: ^0.22.0
   iconv-lite: ^0.6.2
   prettier: ^2.1.2
