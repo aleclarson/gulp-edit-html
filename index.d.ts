@@ -1,6 +1,6 @@
 import { Transform } from 'stream'
 import File = require('vinyl')
-import 'cheerio'
+import cheerio = require('cheerio')
 
 interface Editor {
   ($: cheerio.Selector, file: File): Promise<void> | void
