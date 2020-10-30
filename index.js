@@ -7,7 +7,7 @@ module.exports = editor =>
     async transform(file, _, done) {
       if (file.isBuffer()) {
         let html = file.contents.toString()
-        html = await render(html, editor)
+        html = await render(html, $ => editor($, file))
         file.contents = Buffer.from(html)
       }
       done(null, file)
